@@ -27,7 +27,7 @@ export default function Profile() {
          </div>
          <div className="flex gap-2.5">
             <PrimaryButton Icon={<PDFIcon size={20} />} text={"Descargar CV"} attach={'/pdf/kennmarcucci_CV.pdf'} />
-            <PrimaryButton Icon={<LinkedInIcon size={20} />} text={"LinkedIn"} type={"link"} attach={'https://www.linkedin.com/in/kenn-marcucci-62025a274'} />
+            <PrimaryButton Icon={<LinkedInIcon size={20} />} text={"LinkedIn"} type={"link"} attach={'https://www.linkedin.com/in/kennmarcucci'} />
          </div>
       </section>
    )
