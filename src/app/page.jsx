@@ -13,3 +13,5 @@ export default function HomePage() {
 		</div>
 	)
 }
+
+// TODO: translate to english
