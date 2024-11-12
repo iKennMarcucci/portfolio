@@ -1,0 +1,188 @@
+{
+   "en": {
+      "layout": {
+         "title": "Kenn's Portfolio",
+         "description": "Portfolio made by Kenn Marcucci"
+      },
+      "Navbar": {
+         "experience": "Experience",
+         "projects": "Projects",
+         "aboutus": "About me",
+         "contactus": "Contact"
+      },
+      "Footer": {
+         "text": "Kenn Marcucci. This portfolio was inspired by design approaches found on"
+      },
+      "AnimatedButton": {
+         "text": "Available to work"
+      },
+      "Profile": {
+         "greeting": "Hi, I'm Kenn!",
+         "exp_years": "+3 years of experience.",
+         "job": "Systems Engineer and FullStack Developer",
+         "specialization": "in Colombia. Specialized in the development of unique web and mobile applications."
+      },
+      "Projects": {
+         "title": "My Projects",
+         "first_project": {
+            "title": "Round Robin Scheduling Algorithm - Graphical Representation",
+            "desc": "This project aims to explain the concept of the Round Robin Scheduling Algorithm, detailing what Quantum is, the type of queue it uses and its general operation."
+         },
+         "second_project": {
+            "title": "Search and Sort Algorithms - All Languajes",
+            "desc": "This repository contains search (Linear, Fibonacci, Binary) and sorting (BubbleSort, Insertion, Quicksort, Selectionsort, Shellsort) algorithms implemented in four different programming languages."
+         }
+      },
+      "About": {
+         "title": "About Me",
+         "first_paragraph": {
+            "line_1": "My name is Kenn Marcucci and I'm",
+            "line_2": "years old. I started in the world of programming in 2019 when I began my studies in Systems Engineering. Currently, I work as a",
+            "line_3": "freelance Full Stack developer",
+            "line_4": ", specialized in the",
+            "line_5": "MERN stack",
+            "line_6": "(MySQL, ExpressJS, ReactJS and NodeJS)."
+         },
+         "second_paragraph": {
+            "line_1": "I enjoy working with the stack I am familiar with, but that does not limit my desire for",
+            "line_2": "continuous learning",
+            "line_3": ". Currently, I am studying  ",
+            "line_4": "ASP.NET and Angular",
+            "line_5": "to expand my knowledge and strengthen my skills in web development."
+         },
+         "third_paragraph": {
+            "line_1": "Always looking for new challenges, I am committed to continuing to",
+            "line_2": "hone my skills",
+            "line_3": "and contribute to",
+            "line_4": "innovative projects",
+            "line_5": ". I am ready to continue growing and adding value at every opportunity that presents itself."
+         }
+      },
+      "Experience": {
+         "title": "Work Experience",
+         "first_experience": {
+            "puesto": "Frontend Developer",
+            "empresa": "Mazzi Arquitectos",
+            "fecha": "August, 2024 - September, 2024",
+            "desc": "Mazzi Arquitectos dreamed of a greater presence in the market, improving interaction with potential clients and highlighting their completed projects. Together with them, I developed a Landing Page that met all the technical requirements, which resulted in a significant improvement in the company's objectives."
+         },
+         "second_experience": {
+            "puesto": "QA Analyst",
+            "empresa": "UFPS - Internship",
+            "fecha": "Abril, 2024 - Julio, 2024",
+            "desc": "I performed a detailed analysis of a JBoss 4.2.3-based Payroll and Human Resources Administration System, its architecture, existing functionalities and detected errors. I documented all the information to establish the basis for the development of a new version of the payroll software."
+         },
+         "third_experience": {
+            "puesto": "Frontend Developer",
+            "empresa": "GetMoney",
+            "fecha": "October, 2023 - April, 2024",
+            "desc": "GetMoney aimed to enable users to reserve foreign currency at over 2,000 exchange centers and 5,000 bank branches. In collaboration with a startup, we developed a web application that integrated functionalities such as the possibility of convenient appointment scheduling and a geolocation system to locate the nearest locations, always guaranteeing the best option."
+         },
+         "fourth_experience": {
+            "puesto": "FullStack Developer",
+            "empresa": "Calzado Andrea Navarro",
+            "fecha": "Marzo, 2023 - Julio, 2023",
+            "desc": "Calzado Andrea Navarro wanted an e-commerce to strengthen its presence in the market, automate order management, integrate shipment tracking and a payment gateway, all while ensuring an excellent user experience. As a FullStack Developer, I created a platform that met all requirements, exceeding the expectations of the company and its customers."
+         },
+         "fifth_experience": {
+            "puesto": "Frontend Developer",
+            "empresa": "Sanarte IPS",
+            "fecha": "August, 2022 - November, 2022",
+            "desc": "Sanarte IPS wanted to publish information about its services and an efficient solution to manage and schedule appointments. To solve this, I developed an informative Landing Page that centralized all the relevant details about the institution. In addition, I implemented an email sending system to facilitate appointment scheduling, improving interaction with patients and optimizing their management."
+         }
+      }
+   },
+   "es": {
+      "layout": {
+         "title": "Portfolio de Kenn",
+         "description": "Portfolio hecho por Kenn Marcucci"
+      },
+      "Navbar": {
+         "experience": "Experiencia",
+         "projects": "Proyectos",
+         "aboutus": "Sobre mí",
+         "contactus": "Contacto"
+      },
+      "Footer": {
+         "text": "Kenn Marcucci. Este portfolio se inspiró en enfoques de diseño encontrados en"
+      },
+      "AnimatedButton": {
+         "text": "Disponible para trabajar"
+      },
+      "Profile": {
+         "greeting": "¡Hola, Soy Kenn!",
+         "exp_years": "+3 años de experiencia.",
+         "job": "Ingeniero de Sistemas y Desarrollador FullStack",
+         "specialization": "en Colombia. Especializado en el desarrollo de aplicaciones web y móviles únicas."
+      },
+      "Projects": {
+         "title": "Mis Proyectos",
+         "first_project": {
+            "title": "Round Robin Scheduling Algorithm - Graphical Representation",
+            "desc": "Este proyecto tiene como objetivo explicar el concepto del Algoritmo de Planificación Round Robin, detallando qué es el Quantum, el tipo de cola que utiliza y su funcionamiento general."
+         },
+         "second_project": {
+            "title": "Search and Sort Algorithms - All Languajes",
+            "desc": "Este repositorio contiene algoritmos de búsqueda (Lineal, Fibonacci, Binaria) y ordenamiento (BubbleSort, Insertion, Quicksort, Selectionsort, Shellsort) implementados en cuatro lenguajes de programación diferentes."
+         }
+      },
+      "About": {
+         "title": "Sobre Mí",
+         "first_paragraph": {
+            "line_1": "Mi nombre es Kenn Marcucci y tengo",
+            "line_2": "años. Inicié en el mundo de la programación en 2019 al comenzar mis estudios en Ingeniería de Sistemas. Actualmente, me desempeño como",
+            "line_3": "desarrollador Full Stack freelancer",
+            "line_4": ", especializado en el",
+            "line_5": "stack MERN",
+            "line_6": "(MySQL, ExpressJS, ReactJS y NodeJS)."
+         },
+         "second_paragraph": {
+            "line_1": "Disfruto trabajar con el stack en el que estoy familiarizado, pero eso no limita mi afán de",
+            "line_2": "aprendizaje continuo",
+            "line_3": ". Actualmente, estoy estudiando",
+            "line_4": "ASP.NET y Angular",
+            "line_5": "para ampliar mis conocimientos y fortalecer mis habilidades en el desarrollo web."
+         },
+         "third_paragraph": {
+            "line_1": "Siempre en busca de nuevos desafíos, estoy comprometido con seguir",
+            "line_2": "perfeccionando mis habilidades",
+            "line_3": "y contribuir a",
+            "line_4": "proyectos innovadores",
+            "line_5": ". Estoy listo para seguir creciendo y aportar valor en cada oportunidad que se presente."
+         }
+      },
+      "Experience": {
+         "title": "Experiencia Laboral",
+         "first_experience": {
+            "puesto": "Desarrollador Frontend",
+            "empresa": "Mazzi Arquitectos",
+            "fecha": "Agosto, 2024 - Septiembre, 2024",
+            "desc": "Mazzi Arquitectos soñaba con una mayor presencia en el mercado, mejorar la interacción con potenciales clientes y destacar sus proyectos realizados. Junto a ellos desarrollé una Landing Page que cumpliera todos los requerimientos técnicos, lo cual resultó en una notable mejora en los objetivos de la empresa."
+         },
+         "second_experience": {
+            "puesto": "Analista QA",
+            "empresa": "UFPS - Prácticas",
+            "fecha": "Abril, 2024 - Julio, 2024",
+            "desc": "Realicé un análisis detallado de un Sistema de Nómina de Pagos de Personal y Administración de Recursos Humanos basado en JBoss 4.2.3, su arquitectura, sus funcionalidades existentes y los errores detectados. Documenté toda la información para establecer las bases del desarrollo de una nueva versión del software de nómina."
+         },
+         "third_experience": {
+            "puesto": "Desarrollador Frontend",
+            "empresa": "GetMoney",
+            "fecha": "Octubre, 2023 - Abril, 2024",
+            "desc": "GetMoney aspiraba a permitir a los usuarios reservar divisas en más de 2000 centros cambiarios y 5000 sucursales bancarias. En colaboración con una startup, desarrollamos una aplicación web que integró funcionalidades como la posibilidad de agendar citas de forma conveniente y un sistema de geolocalización para localizar las ubicaciones más cercanas, garantizando siempre la mejor opción."
+         },
+         "fourth_experience": {
+            "puesto": "Desarrollador FullStack",
+            "empresa": "Calzado Andrea Navarro",
+            "fecha": "Marzo, 2023 - Julio, 2023",
+            "desc": "Calzado Andrea Navarro deseaba un e-commerce para fortalecer su presencia en el mercado, automatizar la gestión de pedidos, integrar el seguimiento de envíos y una pasarela de pagos, todo mientras garantizaba una excelente experiencia de usuario. Como Desarrollador Full Stack, realicé una plataforma que cumplió con todos los requisitos, superando las expectativas de la empresa y de sus clientes."
+         },
+         "fifth_experience": {
+            "puesto": "Desarrollador Frontend",
+            "empresa": "Sanarte IPS",
+            "fecha": "Agosto, 2022 - Noviembre, 2022",
+            "desc": "Sanarte IPS aspiraba publicar información sobre sus servicios y una solución eficiente para gestionar y agendar citas. Para resolver esto, desarrollé una Landing Page informativa que centralizara todos los detalles relevantes sobre la institución. Además, implementé un sistema de envío de correos para facilitar el agendamiento de citas, mejorando la interacción con los pacientes y optimizando su gestión."
+         }
+      }
+   }
+}
