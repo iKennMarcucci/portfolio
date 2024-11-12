@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px #0000004d;
+	border-radius: 10px;
+	background-color: #111114;
+}
+
+*::-webkit-scrollbar {
+	width: 12px;
+	background-color: #111114;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #0000004d;
+	background-color: #252525;
+}
+
+body {
+	background: radial-gradient(ellipse 80% 80% at 50% -20%, #1d203b, #030712);
+	@apply min-h-[100dvh] text-gray-200;
+}
+
+.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, #000e317a, #0307127a);
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 80%;
+		height: 80%;
+		background: radial-gradient(circle at top left, #0000147a 30%, #0090977a 110%);
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		left: -20%;
+		top: -20%;
+		filter: blur(150px);
+		animation: blobify 7s ease-in-out 0s infinite;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 80%;
+		height: 80%;
+		background: radial-gradient(circle at bottom right, #00648f7a, #0e0d4e7a 90%);
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		right: -15%;
+		bottom: -30%;
+		filter: blur(150px);
+		animation: blobify 10s ease-in-out 0s infinite;
+	}
+}
+
+@keyframes blobify {
+	0% {
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		transform: translateX(0) translateY(0) scale(1);
+	}
+
+	50% {
+		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+		transform: translateX(100px) translateY(100px) scale(1.2);
+	}
+
+	100% {
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		transform: translateX(0) translateY(0) scale(1);
+	}
+
+}
