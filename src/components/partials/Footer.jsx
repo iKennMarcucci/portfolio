@@ -1,10 +1,35 @@
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export default function Footer() {
-   return (
-      <footer className="text-gray-400 text-sm w-full pt-40 pb-10 mx-auto
-      lg:max-w-[1000px] max-lg:max-w-[900px] max-lg:text-center">
-         © {new Date().getFullYear()} Kenn Marcucci. Este portfolio se inspiró en enfoques de diseño encontrados en&nbsp;
+   const [isVisible, setIsVisible] = useState(false)
+   const [data, setData] = useState(null)
+
+   useEffect(() => {
+      async function fetchData() {
+         let lang = "es"
+         if (localStorage.getItem("languaje") !== null) lang = localStorage.getItem("languaje")
+         const res = await fetch(`/api/footer/${lang}`)
+         const data = await res.json()
+         setData({
+            text: data.text,
+         })
+      }
+      fetchData()
+   }, [localStorage])
+
+   useEffect(() => {
+      const timer = setTimeout(() => {
+         setIsVisible(true)
+      }, 750)
+
+      return () => clearTimeout(timer)
+   }, [])
+
+   return data && isVisible && (
+      <footer className="text-gray-400 fade-in sweep-up text-sm pt-40 pb-10
+      lg:max-w-[1000px] max-lg:max-w-[900px] text-center">
+         © {new Date().getFullYear()} {data.text}&nbsp;
          <Link href={"https://porfolio.dev"} target="_blank" className="hover:underline font-semibold">
             midudev
          </Link>
