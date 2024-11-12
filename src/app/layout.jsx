@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
 		<html lang="es">
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/png" sizes="32x32" />
-				<meta name="theme-color" content={metadata.themeColor} />
+				<meta name="theme-color" content={"#030712"} />
 				<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 				<title>{metadata.title}</title>
 				<meta name="description" content={metadata.description} />
