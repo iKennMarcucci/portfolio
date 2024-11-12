@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/png" sizes="32x32" />
 				<meta name="theme-color" content="#050f28" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 			</head>
 			<body className={`${onest.className} grid min-h-[100dvh] grid-rows-[auto_1fr_auto] antialiased`}>
 				<header className="flex justify-center items-center">
