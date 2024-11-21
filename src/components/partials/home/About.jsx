@@ -1,10 +1,8 @@
-import { AboutIcon } from "@/components/assets/svg/SvgIcon"
 import profile from "@/components/assets/img/profile2.webp"
+import { AboutIcon } from "@/components/assets/svg/SvgIcon"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 
-export default function About() {
-   const [data, setData] = useState(null)
+export default function About({ data }) {
    const calcularEdad = (fecha) => {
       const hoy = new Date()
       const nacimiento = new Date(fecha)
@@ -14,42 +12,7 @@ export default function About() {
       return edad
    }
 
-   useEffect(() => {
-      async function fetchData() {
-         let lang = "es"
-         if (localStorage.getItem("languaje") !== null) lang = localStorage.getItem("languaje")
-         const res = await fetch(`/api/about/${lang}`)
-         const data = await res.json()
-         setData({
-            title: data.title,
-            first_paragraph: {
-               line_1: data.first_paragraph.line_1,
-               line_2: data.first_paragraph.line_2,
-               line_3: data.first_paragraph.line_3,
-               line_4: data.first_paragraph.line_4,
-               line_5: data.first_paragraph.line_5,
-               line_6: data.first_paragraph.line_6
-            },
-            second_paragraph: {
-               line_1: data.second_paragraph.line_1,
-               line_2: data.second_paragraph.line_2,
-               line_3: data.second_paragraph.line_3,
-               line_4: data.second_paragraph.line_4,
-               line_5: data.second_paragraph.line_5
-            },
-            third_paragraph: {
-               line_1: data.third_paragraph.line_1,
-               line_2: data.third_paragraph.line_2,
-               line_3: data.third_paragraph.line_3,
-               line_4: data.third_paragraph.line_4,
-               line_5: data.third_paragraph.line_5
-            }
-         })
-      }
-      fetchData()
-   }, [localStorage])
-
-   return data && (
+   return (
       <section id={"aboutus"} className="flex flex-col gap-5 max-md:gap-10 pt-40">
          <div className="flex items-center gap-2.5">
             <AboutIcon size={30} />

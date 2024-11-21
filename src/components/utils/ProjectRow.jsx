@@ -3,7 +3,7 @@ import PrimaryButton from "./PrimaryButton"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function ProjectRow({ tecnologies = null, hasLink = null, linkPreview = null, linkCode, desc, title, img }) {
+export default function ProjectRow({ tecnologies = null, hasLink = null, linkPreview = null, linkCode, desc, title, img, locale }) {
    return (
       <section className="flex justify-center gap-5
       max-lg:flex-col">
@@ -29,8 +29,8 @@ export default function ProjectRow({ tecnologies = null, hasLink = null, linkPre
             </div>
             <p className="text-gray-300 flex-grow">{desc}</p>
             <div className="flex gap-2 mt-auto">
-               <PrimaryButton Icon={<GithubIcon size={20} />} text={"Código"} attach={linkCode} />
-               {hasLink && <PrimaryButton Icon={<LinkIcon size={20} />} text={"Ver Proyecto"} attach={linkPreview} />}
+               <PrimaryButton Icon={<GithubIcon size={20} />} text={locale === "es" ? "Código" : "Code"} attach={linkCode} />
+               {hasLink && <PrimaryButton Icon={<LinkIcon size={20} />} text={locale === "es" ? "Ver Proyecto" : "See Project"} attach={linkPreview} />}
             </div>
          </div>
       </section>

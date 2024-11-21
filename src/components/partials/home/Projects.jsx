@@ -2,33 +2,9 @@ import { BootstrapIcon, CSSIcon, GoIcon, HTMLIcon, JavaIcon, JSIcon, ProjectIcon
 import roundrobin from "@/components/assets/img/projects/roundrobin.png"
 import searchsort from "@/components/assets/img/projects/searchsort.png"
 import ProjectRow from "@/components/utils/ProjectRow"
-import { useEffect, useState } from "react"
 
-export default function Projects() {
-   const [data, setData] = useState(null)
-
-   useEffect(() => {
-      async function fetchData() {
-         let lang = "es"
-         if (localStorage.getItem("languaje") !== null) lang = localStorage.getItem("languaje")
-         const res = await fetch(`/api/projects/${lang}`)
-         const data = await res.json()
-         setData({
-            title: data.title,
-            first_project: {
-               title: data.first_project.title,
-               desc: data.first_project.desc
-            },
-            second_project: {
-               title: data.second_project.title,
-               desc: data.second_project.desc
-            }
-         })
-      }
-      fetchData()
-   }, [localStorage])
-
-   return data && (
+export default function Projects({ data, locale }) {
+   return (
       <section id={"projects"} className="flex flex-col gap-5 pt-40">
          <div className="flex items-center gap-2.5 mb-10">
             <ProjectIcon size={30} />
@@ -38,6 +14,7 @@ export default function Projects() {
             <ProjectRow linkPreview={"https://ikennmarcucci.github.io/Round_Robin/RoundRobin.html"}
                title={data.first_project.title}
                desc={data.first_project.desc}
+               locale={locale}
                linkCode={"https://github.com/iKennMarcucci/Round_Robin"}
                img={roundrobin}
                hasLink={true}
@@ -62,6 +39,7 @@ export default function Projects() {
             <ProjectRow linkCode={"https://github.com/iKennMarcucci/Search-and-Sort-Algorithms"}
                title={data.second_project.title}
                desc={data.second_project.desc}
+               locale={locale}
                img={searchsort}
                tecnologies={[{
                   title: "Go",
