@@ -9,6 +9,8 @@ const onest = Onest({
 export const metadata = {
   title: 'Kenn Marcucci - Portfolio',
   description: 'This portfolio was developed by Kenn Marcucci',
+  keywords: ["Kenn Marcucci Portfolio", "Kenn Marcucci", "kenn marcucci",
+    "Kenn", "kenn", "Marcucci", "marcucci", "Portfolio", "portfolio", "NextJS", "nextjs"]
 }
 
 export default function RootLayout({ children }) {
