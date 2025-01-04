@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Onest } from "next/font/google"
 import "./globals.css"
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={`${onest.className} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
